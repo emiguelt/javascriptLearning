@@ -1,5 +1,14 @@
 //Models
-window.Wine = Backbone.Model.extend();
+window.Wine = Backbone.Model.extend({
+  defaults:{
+    id:'',
+    name: '',
+    grapes:'',
+    country:'',
+    region: '',
+    year: ''
+  }
+});
 
 window.WineCollection = Backbone.Collection.extend({
   model: Wine,
@@ -14,7 +23,7 @@ window.WineListView = Backbone.View.extend({
   },
   render:function(eventName){
     _.each(this.model.models, function(wine){
-      $(this.el).append(new WineListItemView({model:wind}).render().el);
+      $(this.el).append(new WineListItemView({model:wine}).render().el);
     }, this);
     return this;
   }
@@ -45,9 +54,9 @@ var AppRouter = Backbone.Router.extend({
   },
   list:function(){
     this.wineList = new WineCollection();
-    this.wineListView = new WineListView({model:this.wineList});
-    this.wineList.fetch();
-    $("#sidebar").html(this.wineListView.render().el);
+    var wineListView = new WineListView({model: this.wineList});
+    this.wineListView = wineListView;
+    this.wineList.fetch({success: function(){$("#sidebar").html(wineListView.render().el)}});
   },
   wineDetails:function(id){
     this.wine = this.wineList.get(id);
