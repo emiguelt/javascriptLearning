@@ -2,7 +2,7 @@ var app = app || {}
 
 // ToDo Collection
 
-var TodoList = Backbone.Collections.extend({
+var TodoList = Backbone.Collection.extend({
   model: app.Todo,
   //save all ToDo items under 'todos-backbone' namespace
   localStorage: new Backbone.LocalStorage('todos-backbone'),
