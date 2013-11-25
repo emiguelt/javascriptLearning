@@ -6,3 +6,10 @@ Notes of learning Backbone.js following the guide from http://javascriptissexy.c
 
 * dbba: Exercise or resource from Developing Backbone.js applications book
 
+## Exercise 2 (DBBA)
+
+* Install MongoDB
+* Install Dependencies
+
+
+    npm install #to download dependencies
