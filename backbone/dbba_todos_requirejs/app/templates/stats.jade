@@ -1,0 +1,7 @@
+if total
+  span.todo-account
+    span.number #{remaining}
+    span.word #{remaining == 1 ? 'item' : 'items'} left
+if done
+  span.todo-clear
+    a(href='#') Clear <span class='number-done'>#{done == 1 ? 'item' : 'items'

@@ -1,0 +1,7 @@
+.todo(class=(done ? 'done' : ''))
+  .display
+    input.check(type='checkbox', checked=done)
+    .todo-content
+    .todo-destroy
+  .edit
+    input.todo-input(type='text', value='')

@@ -1,0 +1,242 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'html2jade' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'html2jade', null ]
+6 verbose cache add name=undefined spec="html2jade" args=["html2jade",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'html2jade',
+7 verbose parsed url   path: 'html2jade',
+7 verbose parsed url   href: 'html2jade' }
+8 silly lockFile 512a5fdd-html2jade html2jade
+9 verbose lock html2jade /home/emiguel/.npm/512a5fdd-html2jade.lock
+10 silly lockFile 512a5fdd-html2jade html2jade
+11 silly lockFile 512a5fdd-html2jade html2jade
+12 verbose addNamed [ 'html2jade', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile a813af54-html2jade html2jade@
+15 verbose lock html2jade@ /home/emiguel/.npm/a813af54-html2jade.lock
+16 silly addNameRange { name: 'html2jade', range: '*', hasData: false }
+17 verbose url raw html2jade
+18 verbose url resolving [ 'https://registry.npmjs.org/', './html2jade' ]
+19 verbose url resolved https://registry.npmjs.org/html2jade
+20 info trying registry request attempt 1 at 16:22:06
+21 http GET https://registry.npmjs.org/html2jade
+22 http 200 https://registry.npmjs.org/html2jade
+23 silly registry.get cb [ 200,
+23 silly registry.get   { vary: 'Accept',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+23 silly registry.get     etag: '"66W6PJ4Y9Y6AKE43RWXA4K1MX"',
+23 silly registry.get     date: 'Wed, 27 Nov 2013 21:22:07 GMT',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'content-length': '72096' } ]
+24 silly addNameRange number 2 { name: 'html2jade', range: '*', hasData: true }
+25 silly addNameRange versions [ 'html2jade',
+25 silly addNameRange   [ '0.0.2',
+25 silly addNameRange     '0.0.3',
+25 silly addNameRange     '0.0.4',
+25 silly addNameRange     '0.0.5',
+25 silly addNameRange     '0.0.6',
+25 silly addNameRange     '0.0.7',
+25 silly addNameRange     '0.0.8',
+25 silly addNameRange     '0.1.0',
+25 silly addNameRange     '0.1.1',
+25 silly addNameRange     '0.1.2',
+25 silly addNameRange     '0.1.3',
+25 silly addNameRange     '0.1.4',
+25 silly addNameRange     '0.1.15',
+25 silly addNameRange     '0.1.16',
+25 silly addNameRange     '0.1.17',
+25 silly addNameRange     '0.1.18',
+25 silly addNameRange     '0.1.19',
+25 silly addNameRange     '0.1.20',
+25 silly addNameRange     '0.2.0',
+25 silly addNameRange     '0.2.1',
+25 silly addNameRange     '0.3.0',
+25 silly addNameRange     '0.4.0',
+25 silly addNameRange     '0.4.1',
+25 silly addNameRange     '0.4.2',
+25 silly addNameRange     '0.4.3',
+25 silly addNameRange     '0.4.4',
+25 silly addNameRange     '0.4.5',
+25 silly addNameRange     '0.5.0',
+25 silly addNameRange     '0.5.1',
+25 silly addNameRange     '0.5.2',
+25 silly addNameRange     '0.5.3' ] ]
+26 verbose addNamed [ 'html2jade', '0.5.3' ]
+27 verbose addNamed [ '0.5.3', '0.5.3' ]
+28 silly lockFile 45420a91-html2jade-0-5-3 html2jade@0.5.3
+29 verbose lock html2jade@0.5.3 /home/emiguel/.npm/45420a91-html2jade-0-5-3.lock
+30 silly lockFile 0e65ab8c-rg-html2jade-html2jade-0-5-3-tgz https://registry.npmjs.org/html2jade/-/html2jade-0.5.3.tgz
+31 verbose lock https://registry.npmjs.org/html2jade/-/html2jade-0.5.3.tgz /home/emiguel/.npm/0e65ab8c-rg-html2jade-html2jade-0-5-3-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/html2jade/-/html2jade-0.5.3.tgz',
+32 verbose addRemoteTarball   'dcf72e94bf69b5203a5b53a4d618b6f4af4f3fa1' ]
+33 info retry fetch attempt 1 at 16:22:08
+34 verbose fetch to= /home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/tmp.tgz
+35 http GET https://registry.npmjs.org/html2jade/-/html2jade-0.5.3.tgz
+36 http 200 https://registry.npmjs.org/html2jade/-/html2jade-0.5.3.tgz
+37 verbose tar unpack /home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/tmp.tgz
+38 silly lockFile ab5578ea-28266-0-9999425227288157-package tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package
+39 verbose lock tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package /home/emiguel/.npm/ab5578ea-28266-0-9999425227288157-package.lock
+40 silly lockFile ca2972e1-28266-0-9999425227288157-tmp-tgz tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/tmp.tgz
+41 verbose lock tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/tmp.tgz /home/emiguel/.npm/ca2972e1-28266-0-9999425227288157-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm extractEntry README.md
+46 silly gunzTarPerm extractEntry cli.js
+47 silly gunzTarPerm extractEntry .travis.yml
+48 silly gunzTarPerm extractEntry Makefile
+49 silly gunzTarPerm extractEntry lib/html2jade.js
+50 silly gunzTarPerm extractEntry lib/html2jade.coffee
+51 silly gunzTarPerm extractEntry temp/entity.jade
+52 silly gunzTarPerm extractEntry temp/123.jade
+53 silly gunzTarPerm extractEntry temp/attr-multiline.jade
+54 silly gunzTarPerm extractEntry temp/code.jade
+55 silly gunzTarPerm extractEntry temp/comment.jade
+56 silly gunzTarPerm extractEntry temp/conditional.jade
+57 silly gunzTarPerm extractEntry temp/conditional2.jade
+58 silly gunzTarPerm extractEntry temp/conditional3.jade
+59 silly gunzTarPerm extractEntry temp/empty-class.jade
+60 silly gunzTarPerm extractEntry temp/angular.jade
+61 silly gunzTarPerm extractEntry temp/headless.jade
+62 silly gunzTarPerm extractEntry temp/html5boilerplate.jade
+63 silly gunzTarPerm extractEntry temp/pfft.jade
+64 silly gunzTarPerm extractEntry temp/pre1.jade
+65 silly gunzTarPerm extractEntry temp/pre2.jade
+66 silly gunzTarPerm extractEntry temp/pre3.jade
+67 silly gunzTarPerm extractEntry temp/test.jade
+68 silly gunzTarPerm extractEntry temp/textarea-javascript.jade
+69 silly lockFile ab5578ea-28266-0-9999425227288157-package tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package
+70 silly lockFile ab5578ea-28266-0-9999425227288157-package tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package
+71 silly lockFile ca2972e1-28266-0-9999425227288157-tmp-tgz tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/tmp.tgz
+72 silly lockFile ca2972e1-28266-0-9999425227288157-tmp-tgz tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/tmp.tgz
+73 verbose tar pack [ '/home/emiguel/.npm/html2jade/0.5.3/package.tgz',
+73 verbose tar pack   '/home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package' ]
+74 verbose tarball /home/emiguel/.npm/html2jade/0.5.3/package.tgz
+75 verbose folder /home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package
+76 silly lockFile ab5578ea-28266-0-9999425227288157-package tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package
+77 verbose lock tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package /home/emiguel/.npm/ab5578ea-28266-0-9999425227288157-package.lock
+78 silly lockFile 2d851817--npm-html2jade-0-5-3-package-tgz tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz
+79 verbose lock tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz /home/emiguel/.npm/2d851817--npm-html2jade-0-5-3-package-tgz.lock
+80 silly lockFile ab5578ea-28266-0-9999425227288157-package tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package
+81 silly lockFile ab5578ea-28266-0-9999425227288157-package tar:///home/emiguel/tmp/npm-1966-_dP_4RTY/1385587328266-0.9999425227288157/package
+82 silly lockFile 2d851817--npm-html2jade-0-5-3-package-tgz tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz
+83 silly lockFile 2d851817--npm-html2jade-0-5-3-package-tgz tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz
+84 silly lockFile a615f4ac-guel-npm-html2jade-0-5-3-package /home/emiguel/.npm/html2jade/0.5.3/package
+85 verbose lock /home/emiguel/.npm/html2jade/0.5.3/package /home/emiguel/.npm/a615f4ac-guel-npm-html2jade-0-5-3-package.lock
+86 silly lockFile a615f4ac-guel-npm-html2jade-0-5-3-package /home/emiguel/.npm/html2jade/0.5.3/package
+87 silly lockFile a615f4ac-guel-npm-html2jade-0-5-3-package /home/emiguel/.npm/html2jade/0.5.3/package
+88 verbose tar unpack /home/emiguel/.npm/html2jade/0.5.3/package.tgz
+89 silly lockFile 9a62efd1-guel-npm-html2jade-0-5-3-package tar:///home/emiguel/.npm/html2jade/0.5.3/package
+90 verbose lock tar:///home/emiguel/.npm/html2jade/0.5.3/package /home/emiguel/.npm/9a62efd1-guel-npm-html2jade-0-5-3-package.lock
+91 silly lockFile 2d851817--npm-html2jade-0-5-3-package-tgz tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz
+92 verbose lock tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz /home/emiguel/.npm/2d851817--npm-html2jade-0-5-3-package-tgz.lock
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry package.json
+95 silly gunzTarPerm extractEntry .npmignore
+96 silly gunzTarPerm extractEntry README.md
+97 silly gunzTarPerm extractEntry cli.js
+98 silly gunzTarPerm extractEntry .travis.yml
+99 silly gunzTarPerm extractEntry Makefile
+100 silly gunzTarPerm extractEntry lib/html2jade.js
+101 silly gunzTarPerm extractEntry lib/html2jade.coffee
+102 silly gunzTarPerm extractEntry temp/entity.jade
+103 silly gunzTarPerm extractEntry temp/123.jade
+104 silly gunzTarPerm extractEntry temp/attr-multiline.jade
+105 silly gunzTarPerm extractEntry temp/code.jade
+106 silly gunzTarPerm extractEntry temp/comment.jade
+107 silly gunzTarPerm extractEntry temp/conditional.jade
+108 silly gunzTarPerm extractEntry temp/conditional2.jade
+109 silly gunzTarPerm extractEntry temp/conditional3.jade
+110 silly gunzTarPerm extractEntry temp/empty-class.jade
+111 silly gunzTarPerm extractEntry temp/angular.jade
+112 silly gunzTarPerm extractEntry temp/headless.jade
+113 silly gunzTarPerm extractEntry temp/html5boilerplate.jade
+114 silly gunzTarPerm extractEntry temp/pfft.jade
+115 silly gunzTarPerm extractEntry temp/pre1.jade
+116 silly gunzTarPerm extractEntry temp/pre2.jade
+117 silly gunzTarPerm extractEntry temp/pre3.jade
+118 silly gunzTarPerm extractEntry temp/test.jade
+119 silly gunzTarPerm extractEntry temp/textarea-javascript.jade
+120 silly lockFile 9a62efd1-guel-npm-html2jade-0-5-3-package tar:///home/emiguel/.npm/html2jade/0.5.3/package
+121 silly lockFile 9a62efd1-guel-npm-html2jade-0-5-3-package tar:///home/emiguel/.npm/html2jade/0.5.3/package
+122 silly lockFile 2d851817--npm-html2jade-0-5-3-package-tgz tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz
+123 silly lockFile 2d851817--npm-html2jade-0-5-3-package-tgz tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz
+124 verbose chmod /home/emiguel/.npm/html2jade/0.5.3/package.tgz 644
+125 verbose chown /home/emiguel/.npm/html2jade/0.5.3/package.tgz [ 1000, 1000 ]
+126 silly lockFile 0e65ab8c-rg-html2jade-html2jade-0-5-3-tgz https://registry.npmjs.org/html2jade/-/html2jade-0.5.3.tgz
+127 silly lockFile 0e65ab8c-rg-html2jade-html2jade-0-5-3-tgz https://registry.npmjs.org/html2jade/-/html2jade-0.5.3.tgz
+128 silly lockFile 45420a91-html2jade-0-5-3 html2jade@0.5.3
+129 silly lockFile 45420a91-html2jade-0-5-3 html2jade@0.5.3
+130 silly lockFile a813af54-html2jade html2jade@
+131 silly lockFile a813af54-html2jade html2jade@
+132 silly resolved [ { name: 'html2jade',
+132 silly resolved     description: 'HTML to Jade conversion tool',
+132 silly resolved     version: '0.5.3',
+132 silly resolved     author: { name: 'Don Park', email: 'donpark@docuverse.com' },
+132 silly resolved     repository: { type: 'git', url: 'git://github.com/donpark/html2jade.git' },
+132 silly resolved     license: 'BSD',
+132 silly resolved     main: './lib/html2jade.js',
+132 silly resolved     bin: { html2jade: './cli.js' },
+132 silly resolved     scripts:
+132 silly resolved      { prepublish: 'coffee -c lib',
+132 silly resolved        test: 'node ./node_modules/mocha/bin/mocha' },
+132 silly resolved     dependencies: { commander: '*', ent: '*', jsdom: '~0.6' },
+132 silly resolved     devDependencies: { async: '*', mocha: '~1.12.1', 'coffee-script': '~1.6.3' },
+132 silly resolved     engines: { node: '>= 0.4.0' },
+132 silly resolved     readme: '# html2jade #\n[![Build Status](https://travis-ci.org/donpark/html2jade.png?branch=master)](https://travis-ci.org/donpark/html2jade)\n\n`html2jade` converts HTML into [Jade](https://github.com/visionmedia/jade) format.\n\n## Requirements\n\n`html2jade` currently supports OS X and Linux platforms.\n\nWindows is currently not supported because `html2jade` uses `jsdom` which in turn\ndepends on native code module `Contextify`.\n\n## Install ##\n\n    npm install -g html2jade\n\n## Command-line Usage ##\n\nOutputs to stdout if input is URL\n\n    html2jade http://twitter.com\n    \n    html2jade http://twitter.com > twitter.jade\n    \nOutputs to file if input is file\n    \n    html2jade mywebpage.html # outputs mywebpage.jade\n    html2jade public/*.html  # converts all .html files to .jade\n\nConvert HTML from `stdin`\n\n    cat mywebpage.html | html2jade - \n    \nTo generate [Scalate](http://scalate.fusesource.org/) compatible output:\n\n    html2jade --scalate http://twitter.com\n    html2jade --scalate http://twitter.com > twitter.jade\n    html2jade --scalate mywebpage.html\n    html2jade --scalate public/*.html\n\n### Command-line Options ###\n\n* `-d, --double` - use double quotes for attributes\n* `-s, --scalate` - generate jade syntax compatible with Scalate\n* `-o, --outdir <dir>` - path to output generated jade file(s) to\n* `-n, --nspaces <n>` - the number of spaces to indent generated files with. Default is 2 spaces\n* `-t, --tabs` - use tabs instead of spaces\n* `--donotencode` - do not html encode characters. This is useful for template files which may contain expressions like {{username}}\n\n## Programmatic Usage (>= 0.0.7)\n    \nTo convert raw HTML into Jade:\n\n    var html2jade = require(\'html2jade\');\n    var html = "<html><body>Hello World</body></html>";\n    html2jade.convertHtml(html, {}, function (err, jade) {\n      // do your thing\n    });\n    \nTo convert DOM document into Jade (client-side):\n\n    // assumes html2jade.js file has been loaded\n    Html2Jade.convertDocument(document, {}, function (err, jade) {\n      // do your thing\n    });\n\n## Status ##\n\nMostly usable but sometimes requires fixing up, usually involving conditionals and scripts indentation.\n\nWhile converting a fairly complicated theme package with ~20 HTML files, I had to hand-edit just twice.\n\n## Tools using `html2jade` ##\n\n### Web version ###\n\nThere is a [web version](http://html2jade.aaron-powell.com/) of `html2jade`,\nkindly provided by [@aaronpowell](https://github.com/aaronpowell).\n\n### Linux tray app ###\n\n[Miniclip](http://myguidingstar.github.com/miniclip/) is a Linux tray app that quickly converts\nHTML to Jade, CSS to Stylus and JS to Coffee from clipboard.\n\n## Testing ##\n\nAs of version 0.4, there is a simple unit test that converts HTML files in `test/data` directory\nand compare them against Jade files in the same directory. Unit test harness requires `coffee-script`\nand `mocha` to be installed globally. Run the tests with command `npm test`.\n',
+132 silly resolved     readmeFilename: 'README.md',
+132 silly resolved     bugs: { url: 'https://github.com/donpark/html2jade/issues' },
+132 silly resolved     homepage: 'https://github.com/donpark/html2jade',
+132 silly resolved     _id: 'html2jade@0.5.3',
+132 silly resolved     dist: { shasum: '5f7538313ca1c59f1804f01566e09ae17c676788' },
+132 silly resolved     _from: 'html2jade@',
+132 silly resolved     _resolved: 'https://registry.npmjs.org/html2jade/-/html2jade-0.5.3.tgz' } ]
+133 info install html2jade@0.5.3 into /usr/lib
+134 info installOne html2jade@0.5.3
+135 info /usr/lib/node_modules/html2jade unbuild
+136 verbose tar unpack /home/emiguel/.npm/html2jade/0.5.3/package.tgz
+137 silly lockFile 54e289e9-r-usr-lib-node-modules-html2jade tar:///usr/lib/node_modules/html2jade
+138 verbose lock tar:///usr/lib/node_modules/html2jade /home/emiguel/.npm/54e289e9-r-usr-lib-node-modules-html2jade.lock
+139 silly lockFile 2d851817--npm-html2jade-0-5-3-package-tgz tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz
+140 verbose lock tar:///home/emiguel/.npm/html2jade/0.5.3/package.tgz /home/emiguel/.npm/2d851817--npm-html2jade-0-5-3-package-tgz.lock
+141 silly gunzTarPerm modes [ '755', '644' ]
+142 error Error: EACCES, mkdir '/usr/lib/node_modules/html2jade'
+142 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/html2jade']
+142 error   errno: 3,
+142 error   code: 'EACCES',
+142 error   path: '/usr/lib/node_modules/html2jade',
+142 error   fstream_type: 'Directory',
+142 error   fstream_path: '/usr/lib/node_modules/html2jade',
+142 error   fstream_class: 'DirWriter',
+142 error   fstream_stack:
+142 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+142 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+142 error      'Object.oncomplete (fs.js:107:15)' ] }
+143 error Please try running this command again as root/Administrator.
+144 error System Linux 3.2.0-56-generic-pae
+145 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "html2jade"
+146 error cwd /home/emiguel/src/javascript/backbone/dbba_todos_requirejs
+147 error node -v v0.10.22
+148 error npm -v 1.3.14
+149 error path /usr/lib/node_modules/html2jade
+150 error fstream_path /usr/lib/node_modules/html2jade
+151 error fstream_type Directory
+152 error fstream_class DirWriter
+153 error code EACCES
+154 error errno 3
+155 error stack Error: EACCES, mkdir '/usr/lib/node_modules/html2jade'
+156 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+156 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+156 error fstream_stack Object.oncomplete (fs.js:107:15)
+157 verbose exit [ 3, true ]
