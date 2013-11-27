@@ -13,3 +13,7 @@ Notes of learning Backbone.js following the guide from http://javascriptissexy.c
 
 
     npm install #to download dependencies
+
+## Exercise 3 (DBBA), TODOs using Require JS
+
+* This example was modified to use Jade templating instead of Underscore
