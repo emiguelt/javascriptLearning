@@ -1,7 +1,13 @@
-if total
-  span.todo-account
-    span.number #{remaining}
-    span.word #{remaining == 1 ? 'item' : 'items'} left
-if done
-  span.todo-clear
-    a(href='#') Clear <span class='number-done'>#{done == 1 ? 'item' : 'items'
+span.todo-account
+  strong= remaining
+  | #{remaining == 1 ? 'item' : 'items'}
+ul#filters
+  li
+    a.selected(href='#/') All
+  li
+    a(href='#/active') Active
+  li
+    a(href='#/completed') Completed
+if completed
+  button#clear-completed
+    | Clear completed #{completed}

@@ -1,12 +1,12 @@
 define(['jquery', 
     'backbone', 
-    'collection/todos', 
+    'collections/todos', 
     'views/todos', 
-    'templates/stat',
+    'templates/stats',
     'common'], 
-    functio($, Backbone, Todos, TodoView, statsTemplate, Common){
+    function($, Backbone, Todos, TodoView, statsTemplate, Common){
 
-      var AppView = Backbone.View.extend({i
+      var AppView = Backbone.View.extend({
         el:'#todoapp',
 
       template: statsTemplate,
@@ -83,7 +83,7 @@ define(['jquery',
         };
       },
       createOnEnter:function(event){
-        if(event.which !== ENTER_KEY || !this.$input.val().trim()){
+        if(event.which !== Common.ENTER_KEY || !this.$input.val().trim()){
           return;
         }
         Todos.create(this.newAttributes());

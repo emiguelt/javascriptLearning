@@ -1,4 +1,5 @@
-define(['jquery', 'backbone', 'templates/item'], function($, Backbone, itemTemplate){
+define(['jquery', 'backbone', 'templates/item', 'common'], 
+    function($, Backbone, itemTemplate, Common){
 
   var TodoView = Backbone.View.extend({
     tagName: 'li',
@@ -28,8 +29,8 @@ define(['jquery', 'backbone', 'templates/item'], function($, Backbone, itemTempl
       isHidden: function(){
         var isCompleted = this.model.get('completed');
         return(
-            (!isCompleted && app.TodoFilter === 'completed')
-            || (isCompleted && app.TodoFilter === 'active')
+            (!isCompleted && Common.TodoFilter === 'completed')
+            || (isCompleted && Common.TodoFilter === 'active')
             );
       },
       togglecompleted: function(){

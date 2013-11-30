@@ -1,17 +1,18 @@
 !!!5
 html
   head
-    meta(charset='utf-89')
+    meta(charset='utf-8')
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     title TODOs application using Backbone.js + RequireJS + Jade
     link(rel='stylesheet', href='css/base.css')
   body
-    #todoapp
-      .content
-        #create-todo
-          input#new-todo(placeholder='What needs to be done?', type='text')
-          span.ui-tooltip-top Press enter to save this task
-        #todos
-          ul#todo-list
-        #todo-stats
+    section#todoapp
+      header#header
+        h1 Todos
+        input#new-todo(placeholder='What needs to be done?', type='text', 'autofocus')
+      section#main
+        input#toggle-all(type='checkbox')
+        label(for=toggle-all) Mark all as completed
+        ul#todo-list
+      footer#fotter
     script(data-main='js/main', src='js/libs/require.js')

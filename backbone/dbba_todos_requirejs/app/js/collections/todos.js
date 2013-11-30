@@ -1,4 +1,4 @@
-define(['backbone', 'backboneLocalstorage', 'models/todo'], function(Backbone, Store, Todo){
+define(['backbone', 'backbone.localStorage', 'models/todo'], function(Backbone, Store, Todo){
   // ToDo Collection
 
   var TodoList = Backbone.Collection.extend({
@@ -29,5 +29,5 @@ define(['backbone', 'backboneLocalstorage', 'models/todo'], function(Backbone, S
         return todo.get('order');
       }
   });
-  return  TodoList;
+  return  new TodoList();
 });
