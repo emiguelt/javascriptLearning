@@ -1,6 +1,6 @@
-span.todo-count
+span#todo-count
   strong= remaining
-  | #{remaining == 1 ? 'item' : 'items'}
+  | #{remaining == 1 ? ' item' : ' items'} left
 ul#filters
   li
     a.selected(href='#/') All
