@@ -13,5 +13,11 @@ public class WineCellarController {
     	return Results.ok();
     	
     }
+    
+    public Result winePart2() {
+
+        return Results.ok();
+        
+      }    
 
 }

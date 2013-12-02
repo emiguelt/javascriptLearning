@@ -1,11 +1,13 @@
 package controllers;
 
 import models.Wine;
+import models.WineDto;
 import ninja.Result;
 import ninja.Results;
 import ninja.Router;
 import ninja.params.Param;
 import ninja.params.PathParam;
+import ninja.validation.JSR303Validation;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
@@ -31,23 +33,17 @@ public class ApiController {
         return Results.json().render(wineDao.get(id));
     }
 
-    public Result newWine(@Param("name") String name,
-                          @Param("grapes") String grapes,
-                          @Param("country") String country,
-                          @Param("region") String region,
-                          @Param("year") Integer year) {
-        return saveWine(null, name, grapes, country, region, year);
+    public Result newWine( WineDto wine) {
+        return saveWine(null, wine.name, wine.grapes,
+                wine.country, wine.region, Integer.valueOf(wine.year));
     }
 
     public Result updateWine(@PathParam("id") Long id,
-                             @Param("name") String name,
-                             @Param("grapes") String grapes,
-                             @Param("country") String country,
-                             @Param("region") String region,
-                             @Param("year") Integer year) {
-        return saveWine(id, name, grapes, country, region, year);
+                             WineDto wine) {
+        return saveWine(id, wine.name, wine.grapes,
+                wine.country, wine.region, Integer.valueOf(wine.year));
     }
-    
+
     public Result deleteWine(@PathParam("id") Long id) {
         wineDao.delete(id);
         return Results.json().render("success", true);
