@@ -5,9 +5,7 @@ import models.WineDto;
 import ninja.Result;
 import ninja.Results;
 import ninja.Router;
-import ninja.params.Param;
 import ninja.params.PathParam;
-import ninja.validation.JSR303Validation;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;

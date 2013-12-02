@@ -1,7 +1,7 @@
 package models;
 
 public class WineDto {
-    public String Id;
+    public String id;
     public String name;
     public String grapes;
     public String country;
