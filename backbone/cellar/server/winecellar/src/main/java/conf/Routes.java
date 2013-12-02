@@ -43,9 +43,15 @@ public class Routes implements ApplicationRoutes {
     @Override
     public void init(Router router) {  
 
-    	router.GET().route("/wines").with(ApiController.class, "getWineList");
     	router.GET().route("/addone").with(ApiController.class, "addone");
     	router.GET().route("/part1").with(WineCellarController.class, "winePart1");
+    	
+    	//api routes
+    	router.GET().route("/wines").with(ApiController.class, "getWineList");
+    	router.GET().route("/wines/{id}").with(ApiController.class, "getWineById");
+    	router.POST().route("wines").with(ApiController.class, "newWine");
+    	router.PUT().route("/wines/{id}").with(ApiController.class, "updateWine");
+    	router.DELETE().route("/wines/{id}").with(ApiController.class, "deleteWine");
     	
     	 ///////////////////////////////////////////////////////////////////////
         // Assets (pictures / javascript)

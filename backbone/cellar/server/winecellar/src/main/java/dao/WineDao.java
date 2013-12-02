@@ -22,7 +22,7 @@ public class WineDao extends AbstractDao<Wine> {
 				"region_" + time, 1));
 	}
 
-	private Wine buildWine(String name, String grapes, String country,
+	public Wine buildWine(String name, String grapes, String country,
 			String region, int year) {
 		Wine wine = new Wine();
 		wine.setName(name);
