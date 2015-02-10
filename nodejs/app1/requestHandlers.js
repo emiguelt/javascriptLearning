@@ -3,11 +3,21 @@ var exec = require('child_process').exec;
 function start(rsp){
   console.log('RequestHandler - start was called');
 
-  exec('find /', {timeout: 10000, maxBuffer: 20000*1024}, function(error, sdout, stderr){
-    rsp.writeHead(200,{'Content-Type': 'text/plain'});
-    rsp.write(sdout);
-    rsp.end();
-  });
+  var body = '<html>' +
+    '<head>' + 
+      '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />'+
+    '</head>'+
+    '<body>'+
+    '<form action="/upload" method="post">'+
+      '<textarea name="text" rows="20" cols="60"></textarea>'+
+      '<input type="submit" value="Submit-text"/>'+
+     '</form>'+
+    '</body>'+
+    '</html>';
+
+  rsp.writeHead(200,{'Content-Type': 'text/html'});
+  rsp.write(body);
+  rsp.end();
 }
 
 function upload(rsp){
