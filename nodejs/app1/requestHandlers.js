@@ -1,6 +1,6 @@
-var exec = require('child_process').exec;
+var queryString = require('querystring');
 
-function start(rsp){
+function start(rsp, postData){
   console.log('RequestHandler - start was called');
 
   var body = '<html>' +
@@ -20,11 +20,11 @@ function start(rsp){
   rsp.end();
 }
 
-function upload(rsp){
+function upload(rsp, postData){
   console.log('RequestHandler - upload was called');
 
   rsp.writeHead(200,{'Content-Type': 'text/plain'});
-  rsp.write('hello upload');
+  rsp.write('You have sent: ' +  queryString.parse(postData).text);
   rsp.end();
 }
 
