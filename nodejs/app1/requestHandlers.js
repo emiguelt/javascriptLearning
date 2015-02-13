@@ -1,4 +1,5 @@
 var queryString = require('querystring');
+var fs = require('fs');
 
 function start(rsp, postData){
   console.log('RequestHandler - start was called');
@@ -28,5 +29,23 @@ function upload(rsp, postData){
   rsp.end();
 }
 
+function show(rsp, postData){
+  console.log('Request handler "show" was called');
+
+  fs.readFile('image.png', 'binary', function(error, file){
+    if(error){
+      rsp.writeHead(500, {'Content-Type': 'text/plain'});
+      rsp.write(error + '\n');
+      rsp.end();
+    }else{
+      rsp.writeHead(200, {'Content-Type': 'image/png'});
+      rsp.write(file, "binary");
+      rsp.end();
+    }
+  });
+
+}
+
 exports.start = start;
 exports.upload = upload;
+exports.show = show;
