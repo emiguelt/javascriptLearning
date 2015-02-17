@@ -1,7 +1,8 @@
 var queryString = require('querystring');
 var fs = require('fs');
+var formidable = require('formidable');
 
-function start(rsp, postData){
+function start(rsp){
   console.log('RequestHandler - start was called');
 
   var body = '<html>' +
@@ -9,9 +10,9 @@ function start(rsp, postData){
       '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />'+
     '</head>'+
     '<body>'+
-    '<form action="/upload" method="post">'+
-      '<textarea name="text" rows="20" cols="60"></textarea>'+
-      '<input type="submit" value="Submit-text"/>'+
+    '<form action="/upload" method="post" enctype="multipart/form-data">'+
+      '<input type="file" name="upload1" multiple="multiple"/>' + 
+      '<input type="submit" value="Upload file"/>'+
      '</form>'+
     '</body>'+
     '</html>';
@@ -21,18 +22,39 @@ function start(rsp, postData){
   rsp.end();
 }
 
-function upload(rsp, postData){
+function upload(rsp, request){
   console.log('RequestHandler - upload was called');
 
-  rsp.writeHead(200,{'Content-Type': 'text/plain'});
-  rsp.write('You have sent: ' +  queryString.parse(postData).text);
+  var form = new formidable.IncomingForm();
+  console.log("about to parse");
+  console.log(request);
+
+  form.parse(request, function(error, fields, files){
+    if(error){
+      console.log(error);
+    }
+    console.log(fields);
+    console.log(files);
+    console.log("parsing done");
+
+    fs.rename(files.upload1.path, "/tmp/test.png", function(error){
+      if(error){
+        fs.unlink("/tmp/test.png");
+        fs.rename(files.upload1.path, "/tmp/test.png");
+      }
+    })
+  });
+
+  rsp.writeHead(200,{'Content-Type': 'text/html'});
+  rsp.write("received image: <br/>");
+  rsp.write("<img src='/show'/>");
   rsp.end();
 }
 
-function show(rsp, postData){
+function show(rsp){
   console.log('Request handler "show" was called');
 
-  fs.readFile('image.png', 'binary', function(error, file){
+  fs.readFile('/tmp/image.png', 'binary', function(error, file){
     if(error){
       rsp.writeHead(500, {'Content-Type': 'text/plain'});
       rsp.write(error + '\n');
